@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Trabalhando com Função</title>
 </head>
+
 <body>
 
     <script>
-        
+        function MostrarMensagem(msg) {
+            alert(msg);
+        }
+        /* a mensagem (conteudo que quero passar o parametro "msg") esta em parenteses, que é o conteudo que sera passado para a função "mostrarmMensagem", dentro do parametro "msg" */
+        MostrarMensagem("função com parametro em javascript");
+
+        MostrarMensagem("Função com parametro em javascript");
+        MostrarMensagem("Outra mensagem!");
+
+        /* as variaveis "msg" sao diferentes, esta so existe fora do escopo, enquanto a outra funciona somente dentro do escopo da variavel - o conteudo foi imprimido na tela pq ela ainda mostra o conteudo que coloquei na variavel que criei*/
+        msg = "mensagem por variavel";
+        MostrarMensagem(msg);
     </script>
-    
+
+
 </body>
+
 </html>

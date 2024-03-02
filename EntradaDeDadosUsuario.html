@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Trabalhando com Função</title>
+</head>
+<body>
+
+    <script>
+         function MostrarMensagem(msg){
+            alert(msg)
+        }
+        // definindo que esta variavel recebera um valor do usuario (o valor da variavel msgUsuario sera passado como parametro para a variavel "msg" da função MostrarMensagem, podendo manipular um valor vindo de fora do seu escopo, e o "manipulando" valor dentro do seu escopo) - o conteudo dentro de prompt, é oq sera exibido ao usuario, dizendo: "digite uma mensagem"
+        let msgUsuario = prompt("Digite uma mensagem");
+        MostrarMensagem(msgUsuario);
+    </script>
+    
+</body>
+</html>
